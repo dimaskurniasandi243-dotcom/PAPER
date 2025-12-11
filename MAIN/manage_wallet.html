@@ -1,0 +1,84 @@
+<!-- manage_wallet.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40/FFD700/000000?text=Logo" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li data-color="blue"><a href="index.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                    <li data-color="red"><a href="check_invoice.html"><i class="fas fa-file-invoice"></i> <span>Check Invoice</span></a></li>
+                    <li data-color="blue"><a href="manage_workers.html"><i class="fas fa-users"></i> <span>Manage Workers</span></a></li>
+                    <li class="active" data-color="green"><a href="manage_wallet.html"><i class="fas fa-wallet"></i> <span>Manage Wallet</span></a></li>
+                    <li data-color="yellow"><a href="manage_projects.html"><i class="fas fa-project-diagram"></i> <span>Manage Projects</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="date">3 August 2021</div>
+                <div class="icons">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-moon theme-toggle" id="theme-toggle"></i>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile">
+                        <div>
+                            <span>Sophia</span>
+                            <span>Execution manager</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="create-new">Add Transaction</button>
+            </header>
+            <section class="page-section">
+                <h1>Manage Wallet</h1>
+                <div class="wallet-balance">
+                    <h2>Current Balance: $50,000</h2>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021-08-01</td>
+                            <td>Payment from Client A</td>
+                            <td>+$10,000</td>
+                            <td>Income</td>
+                        </tr>
+                        <tr>
+                            <td>2021-08-02</td>
+                            <td>Salary Payment</td>
+                            <td>-$5,000</td>
+                            <td>Expense</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

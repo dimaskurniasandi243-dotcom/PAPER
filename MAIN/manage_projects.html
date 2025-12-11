@@ -1,0 +1,84 @@
+<!-- manage_projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40/FFD700/000000?text=Logo" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li data-color="blue"><a href="index.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                    <li data-color="red"><a href="check_invoice.html"><i class="fas fa-file-invoice"></i> <span>Check Invoice</span></a></li>
+                    <li data-color="blue"><a href="manage_workers.html"><i class="fas fa-users"></i> <span>Manage Workers</span></a></li>
+                    <li data-color="green"><a href="manage_wallet.html"><i class="fas fa-wallet"></i> <span>Manage Wallet</span></a></li>
+                    <li class="active" data-color="yellow"><a href="manage_projects.html"><i class="fas fa-project-diagram"></i> <span>Manage Projects</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="date">3 August 2021</div>
+                <div class="icons">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-moon theme-toggle" id="theme-toggle"></i>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile">
+                        <div>
+                            <span>Sophia</span>
+                            <span>Execution manager</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="create-new">Create New Project</button>
+            </header>
+            <section class="page-section">
+                <h1>Manage Projects</h1>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Client</th>
+                            <th>Deadline</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Project Alpha</td>
+                            <td>Client A</td>
+                            <td>2021-09-01</td>
+                            <td>In Progress</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Project Beta</td>
+                            <td>Client B</td>
+                            <td>2021-10-01</td>
+                            <td>Completed</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
