@@ -1,0 +1,106 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40/FFD700/000000?text=Logo" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="active" data-color="blue"><a href="index.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                    <li data-color="red"><a href="check_invoice.html"><i class="fas fa-file-invoice"></i> <span>Check Invoice</span></a></li>
+                    <li data-color="blue"><a href="manage_workers.html"><i class="fas fa-users"></i> <span>Manage Workers</span></a></li>
+                    <li data-color="green"><a href="manage_wallet.html"><i class="fas fa-wallet"></i> <span>Manage Wallet</span></a></li>
+                    <li data-color="yellow"><a href="manage_projects.html"><i class="fas fa-project-diagram"></i> <span>Manage Projects</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="date">3 August 2021</div>
+                <div class="icons">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-moon theme-toggle" id="theme-toggle"></i>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile">
+                        <div>
+                            <span>Sophia</span>
+                            <span>Execution manager</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="create-new">Create New</button>
+            </header>
+            <section class="dashboard-section">
+                <div class="leadership-statement">
+                    <h1>Hi, George!</h1>
+                    <p>What are we doing today?</p>
+                    <div class="profile-container">
+                        <img class="profile-photo" src="https://via.placeholder.com/200x300/eeeeee/000000?text=Profile+Photo" alt="George">
+                        <div class="profile-info">
+                            <h3>George</h3>
+                            <p>Your Title</p>
+                            <p>With years of experience, I am committed to leading with innovation and integrity.</p>
+                            <p class="signature">George</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="notifications">
+                    <h3>Notifications <span>See all</span></h3>
+                    <ul>
+                        <li class="yellow">
+                            <p>You've added new project, recently with no deadline.</p>
+                        </li>
+                        <li class="red">
+                            <p>Project owner Adam requested a refund.</p>
+                        </li>
+                        <li class="blue">
+                            <p>Today it's Teta's birthday! Happy birthday!</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="stats">
+                <div class="card red">
+                    <i class="fas fa-wallet"></i>
+                    <h4>Potential Profit</h4>
+                    <p>$24,042,000</p>
+                    <span>Monthly</span>
+                </div>
+                <div class="card blue">
+                    <i class="fas fa-file-alt"></i>
+                    <h4>Workers Wage</h4>
+                    <p>$8,402,000</p>
+                    <span>This Month</span>
+                </div>
+                <div class="card yellow">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>Average Project Length</h4>
+                    <p>2 weeks</p>
+                </div>
+                <div class="card green">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Average Income per Project</h4>
+                    <p>$12,000</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
